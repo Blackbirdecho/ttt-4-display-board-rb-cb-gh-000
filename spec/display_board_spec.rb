@@ -150,14 +150,14 @@ describe "#display_board in 'lib/display_board.rb" do
         expect(rows[2]).to eq(" X | X | X ")
         expect(rows[3]).to eq("-----------")
         expect(rows[4]).to eq(" X | X | X ")
-      
+
       # entirely filled with Xs?"
 
       # Define the board with values that should create the desired output
       # *** Edit the line below ***
      # This is not correct
 
-  
+
 
       # Each line that starts with expect represents a row in the ouput.
       # The desired characters a row must include are provided by the String
@@ -187,7 +187,7 @@ describe "#display_board in 'lib/display_board.rb" do
       board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
             output = capture_puts{ display_board(board) }
             rows = output.split("\n")
-    
+
             expect(rows[0]).to eq(" O | O | O ")
             expect(rows[1]).to eq("-----------")
             expect(rows[2]).to eq(" O | O | O ")
